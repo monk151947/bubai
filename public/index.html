@@ -9,9 +9,15 @@
     body {
       padding-top: 50px;
     }
+    .navbar-brand img {
+      top: -15px;
+      position: relative;
+      width: 70px;
+      }
   </style>
 </head>
 <body data-spy="scroll" data-target="#main-navbar">
+  
   <!-- NAVBAR -->
   <nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role="navigation">
     <div class="container">
@@ -23,18 +29,53 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a href="index.html" class="navbar-brand">Product Name</a>
+        <a href="index.html" class="navbar-brand"><img src="/photo.JPG" width="70px"></a>
       </div> <!-- end navbar-header -->
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <a href="#" class="btn btn-success navbar-btn navbar-right">Buy Now</a>
 
         <ul class="nav navbar-nav">
-          <li><a href="#section-testimonials">Testimonials</a></li>
-          <li><a href="#section-features">Features</a></li>
-          <li><a href="#section-gallery">Gallery</a></li>
-          <li><a href="#section-faq">F.A.Q.</a></li>
-          <li><a href="#section-contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">About</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Mission</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Vision</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products and services <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Data Center Services</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Enter Infrastructure Services</a></li>
+              <li class="divider"></li>
+              <li><a href="#">End User Services</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Software Services</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Web Services</a></li>
+              <li class="divider"></li>
+              <li><a href="#">LV Systems</a></li>
+              <li class="divider"></li>
+              <li><a href="#">E-Commerce</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Panduit</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Partner 2</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Partner 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#section-testimonials">Careers</a></li>
+          <li><a href="#section-features">Contact us</a></li>
         </ul>
       </div> <!-- end collapse -->
     </div> <!-- end container -->
