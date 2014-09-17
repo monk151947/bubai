@@ -39,7 +39,32 @@
         display: none;
       }
     }
-
+  footer {
+    color: #84b7e2;
+    background: #18284e;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #000;
+  }
+  footer a {
+    color: #84b7e2;
+  }
+  footer a:hover {
+    color: #18284e;
+  }
+  .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -63px;
+  }
+  .push {
+    height: 63px;
+  }
+  /* not required for sticky footer; just pushes hero down a bit */
+  .wrapper > .container {
+    padding-top: 60px;
+  }
+  
   </style>
 </head>
 <body data-spy="scroll" data-target="#main-navbar">
@@ -172,16 +197,15 @@
     </section>
   </div> <!-- end container -->
 
-  <div class="container">
+  
     <footer>
-
-      <div class="container text-center">
-        <hr>
+    <div class="container"> 
+      <div>
         <p>&copy; Copyright 2014.</p>
       </div> <!-- end container -->
-
+    </div> 
     </footer>
-  </div>
+  
 
 </body>
 </html>
