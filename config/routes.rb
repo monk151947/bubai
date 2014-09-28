@@ -1,4 +1,17 @@
 Bubai::Application.routes.draw do
+  
+   mount Mercury::Engine => '/'
+
+   
+
+    resources :pages do
+    member { post :mercury_update }
+  end
+  namespace :mercury do
+      resources :images
+    end
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
