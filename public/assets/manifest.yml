@@ -1,10 +1,10 @@
 ---
 photo3.png: photo3-10d1cfc570db423de4c638ba8a032db5.png
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
-application.js: application-6cb2eae4273f57fac22ba098a11f3ace.js
-mercury.js: mercury-662d2c8b70464c939e098d001447c289.js
-application.css: application-d91176bc04d6dc1d751840b6138c91c4.css
-mercury.css: mercury-c2f5cdb2c2ff0a7e3241312906beb66c.css
+application.js: application-afcf75158a5f70a94a1e5376f0944bcc.js
+mercury.js: mercury-29c096f3cf0d8bdbd40781e75e32798c.js
+application.css: application-9d0674d6f357d7ceb5ad6fdf212263cf.css
+mercury.css: mercury-b656f781a8e900af7b3b096e54e8570a.css
 mercury/button.png: mercury/button-77dc9da26371196f3f52d47e01ccf60b.png
 mercury/close.png: mercury/close-6eb51d999a4b569094631875cfc031a3.png
 mercury/default-snippet.png: mercury/default-snippet-cb22d06900274a955933ea58bf4b7d87.png
@@ -32,4 +32,5 @@ mercury/toolbar/primary/tools.png: mercury/toolbar/primary/tools-4b7f314d387e9ce
 mercury/toolbar/primary/undo.png: mercury/toolbar/primary/undo-198778b2ef78a08960304c9489fc37c3.png
 mercury/toolbar/primary/user.png: mercury/toolbar/primary/user-bd7bd3279893e7c68fb6077d317ff4a2.png
 mercury/toolbar/snippets/buttons.png: mercury/toolbar/snippets/buttons-1332f1dd5f0a4737cbaac7553128ae91.png
+jquery-1.7.js: jquery-1.7-e79de3dc506977ad6e319714e89aabb2.js
 jquery.min.map: jquery.min-e114a636272720addc8ee64f57a10f79.map
