@@ -13,6 +13,7 @@ Bubai::Application.routes.draw do
 
   match '/site/index' => 'site#index'
   match '/structured-cabling' => 'site#cabling'
+  match '/data-center-services' => 'site#dcs'
   match '/enter-infrastructure-services' => 'site#eis'
   match '/end-user-services' => 'site#eus'
   match '/software-services' => 'site#ss'
