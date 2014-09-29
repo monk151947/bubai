@@ -4,13 +4,22 @@ Bubai::Application.routes.draw do
 
    
 
-    resources :pages do
+  resources :pages do
     member { post :mercury_update }
   end
   namespace :mercury do
       resources :images
-    end
-  
+  end
+
+  match '/site/index' => 'site#index'
+  match '/structured-cabling' => 'site#cabling'
+  match '/enter-infrastructure-services' => 'site#eis'
+  match '/end-user-services' => 'site#eus'
+  match '/software-services' => 'site#ss'
+  match '/web-services' => 'site#webservices'
+  match '/lv-systems' => 'site#lv'
+  match '/e-commerce' => 'site#ecommerce'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -61,7 +70,7 @@ Bubai::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'site#index'
 
   # See how all your routes lay out with "rake routes"
 

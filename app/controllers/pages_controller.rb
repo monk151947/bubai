@@ -6,10 +6,7 @@ class PagesController < ApplicationController
   def new
    @page = Page.new
   end
-   def show
-    @page = Page.find(params[:id])
-  end
-  
+
   def create
     @page = Page.new(params[:page])
 
@@ -26,6 +23,10 @@ class PagesController < ApplicationController
 
   def show
     @page = Page.find(params[:id])
+  end
+
+  def slug
+    @page = Page.find_by_name(params[:path])
   end
   
   def update
