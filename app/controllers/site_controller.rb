@@ -4,6 +4,8 @@ class SiteController < ApplicationController
 
 	def cabling;end
 
+	def dcs;end
+
 	def eis;end
 
 	def eus;end
