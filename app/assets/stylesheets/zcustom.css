@@ -98,6 +98,10 @@ img {
   background: #202020;
 }
 
+address {
+  font-size: 15px;
+}
+
 .carousel-control        { width:  4%; }
 .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 @media (max-width: 767px) {

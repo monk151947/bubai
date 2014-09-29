@@ -28,8 +28,7 @@
       </div> <!-- end navbar-header -->
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
-        <a href="#" class="btn btn-default navbar-btn navbar-right">Contact Us</a>
-
+        <a href="#" class="btn btn-default navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">Contact Us</a>
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
@@ -73,7 +72,30 @@
       </div> <!-- end collapse -->
     </div> <!-- end container -->
   </nav>
-
+  <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h2 class="modal-title" id="myModalLabel">CONTACT US</h2>
+              </div>
+              <div class="modal-body">
+                <address>
+                  <strong>4C GLOBAL SOLUTIONS TRADING LLC</strong><br>
+                  P.O.BOX 38386,<br>
+                  OFFICE # 507,<br> 
+                  CEO BUILDING,<br>
+                  DUBAI INVESTMENT PARK 1- DUBAI,<br>
+                  U.A.E,<br> 
+                  Tel: +971 4 8800090
+                </address>
+                <strong>Email</strong>
+                <p><a href="mailto:sales@fourcglobal.com">sales@fourcglobal.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
   <%= yield %>
 
