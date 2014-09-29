@@ -2,8 +2,6 @@
 <html>
 <head>
   <title>Bubai</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <title>4CGS Technologies</title>
   <!-- Mobile Specific Meta -->
@@ -11,65 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <style>
-    body {
-      padding-top: 50px;
-    }
-    .navbar-brand img {
-      top: -15px;
-      position: relative;
-      width: 70px;
-      }
-    .navbar-inverse {
-      background-color: #014477;
-      border-color: #014477;
-      }
-    .navbar-inverse .navbar-nav>li>a {
-    color: #fff;
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .dropdown-menu {
-      background-color: #014477;
-
-    }
-
-    .dropdown-menu li a{
-      color: #fff;
-    }
-    @media screen and (max-width : 480px){
-      .navbar-brand img {
-        display: none;
-      }
-    }
-  footer {
-    color: #84b7e2;
-    background: #18284e;
-    padding: 17px 0 18px 0;
-    border-top: 1px solid #000;
-  }
-  footer a {
-    color: #84b7e2;
-  }
-  footer a:hover {
-    color: #18284e;
-  }
-  .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -63px;
-  }
-  .push {
-    height: 63px;
-  }
-  /* not required for sticky footer; just pushes hero down a bit */
-  .wrapper > .container {
-    padding-top: 60px;
-  }
-  
-  </style>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role="navigation">
@@ -82,7 +24,7 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a href="index.html" class="navbar-brand"><img src="/photo.JPG" width="70px"></a>
+        <a href="/" class="navbar-brand"></a>
       </div> <!-- end navbar-header -->
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -102,19 +44,21 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products and services <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Data Center Services</a></li>
+              <li><a href="/structured-cabling">Structured Cabling</a></li>
               <li class="divider"></li>
-              <li><a href="#">Enter Infrastructure Services</a></li>
+              <li><a href="/data-center-services">Data Center Services</a></li>
               <li class="divider"></li>
-              <li><a href="#">End User Services</a></li>
+              <li><a href="/enter-infrastructure-services">Enter Infrastructure Services</a></li>
               <li class="divider"></li>
-              <li><a href="#">Software Services</a></li>
+              <li><a href="/end-user-services">End User Services</a></li>
               <li class="divider"></li>
-              <li><a href="#">Web Services</a></li>
+              <li><a href="/software-services">Software Services</a></li>
               <li class="divider"></li>
-              <li><a href="#">LV Systems</a></li>
+              <li><a href="/web-services">Web Services</a></li>
               <li class="divider"></li>
-              <li><a href="#">E-Commerce</a></li>
+              <li><a href="/lv-systems">LV Systems</a></li>
+              <li class="divider"></li>
+              <li><a href="e-commerce">E-Commerce</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -134,16 +78,36 @@
   </nav>
 
 
-
-<%= yield %>
+  <%= yield %>
 
 <footer>
     <div class="container"> 
       <div>
-        <p>&copy; Copyright 2014.</p>
+        <p class="center">&copy; Copyright 2014.</p>
       </div> <!-- end container -->
     </div> 
     </footer>
 
 </body>
+
+<script type="text/javascript">
+  $(function(){
+      $('.carousel[data-type="multi"] .item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<2;i++) {
+      next=next.next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      
+      next.children(':first-child').clone().appendTo($(this));
+    }
+});
+  });
+</script>
 </html>
