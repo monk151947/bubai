@@ -1,6 +1,8 @@
 class SiteController < ApplicationController
 
-	def index;end
+	def index
+		@page = Page.find(1)
+	end
 
 	def cabling;end
 
