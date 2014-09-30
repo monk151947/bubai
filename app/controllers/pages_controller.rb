@@ -35,5 +35,6 @@ class PagesController < ApplicationController
     page.content = params[:content][:page_content][:value]
     page.save!
     render text: ""
+   # redirect_to site_index_path 
   end
 end
